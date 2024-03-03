@@ -5,6 +5,7 @@
  * @{
  */
 
+
 /** \file common.h
  * \brief Commonly used functions used by drivers.
  *
@@ -14,43 +15,7 @@
  *
  * THIS CODE WILL ONLY WORK WITH ROBOTC VERSION 4.10 AND HIGHER
 
- *
- * Changelog:
- * - 0.1: Initial release
- * - 0.2: Added version check to issue error when compiling with RobotC < 1.46
- * - 0.2: Added __COMMON_H_DEBUG__ to enable/disable sounds when an I2C error occurs
- * - 0.2: Removed bool waitForI2CBus(tSensors link, bool silent)
- * - 0.3: clearI2CError() added to make writeI2C more robust, I2C bus errors are now handled
- *        better.
- * - 0.4: Added HiTechnic SMUX functions
- * - 0.5: Added clip function (Tom Roach)
- * - 0.6: clearI2CBus is now conditionally compiled into the FW.  Only RobotC < 1.57 needs it.
- * - 0.7: ubyteToInt(byte byteVal) modified, works better with 1.57+
- * - 0.8: ubyte used for arrays for firmware version 770 and higher<br>
- *        added support for new colour sensor<br>
- *        added better handling for when sensor is not configured properly
- * - 0.9: added bool HTSMUXsetMode(tSensors link, byte channel, byte mode) prototype<br>
- *        added short HTSMUXreadAnalogue(tMUXSensor muxsensor)<br>
- *        added HTSMUXSensorType HTSMUXreadSensorType(tMUXSensor muxsensor)<br>
- *        added bool HTSMUXreadPort(tMUXSensor muxsensor, tByteArray &result, short numbytes, short offset)<br>
- *        added bool HTSMUXreadPort(tMUXSensor muxsensor, tByteArray &result, short numbytes)<br>
- *        added bool HTSMUXsetMode(tMUXSensor muxsensor, byte mode)<br>
- *        added bool HTSMUXsetAnalogueActive(tMUXSensor muxsensor)<br>
- *        added bool HTSMUXsetAnalogueInactive(tMUXSensor muxsensor)<br>
- *        corrected function description for HTSMUXSensorType()
- * - 0.10: Removed unnecessary read from HTSMUXsendCommand()
- * - 0.11: Added long uByteToLong(byte a1, byte a2, byte a3, byte a4);
- * - 0.12: Added HTSMUXreadPowerStatus(tSensors link)<br>
- *         Added short round(float fl)
- * - 0.13: Added motor mux types and data structs
- * - 0.14: Added check for digital sensors to prevent conflict with built-in drivers\n
- *         Changed clearI2CError to take ubyte for address, thanks Aswin
- * - 0.15: Removed motor mux and sensor mux functions and types out
- * - 0.16: Added max() and min() functions by Mike Henning, Max Bareiss
- *
- * \author Xander Soldaat (xander_at_botbench.com)
- * \date 27 April 2011
- * \version 0.16
+ * (xander_at_botbench.com)
  */
 
 #pragma systemFile
