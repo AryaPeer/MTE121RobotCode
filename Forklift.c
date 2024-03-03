@@ -1,11 +1,3 @@
-/*
-MOTOR CONFIG
-motorA = Forklift(R)
-motorC = Left(R)
-motorD = Right(R)
-
-
-*/
 #include "UW_sensorMux.c"
 void sensorConfig();
 void driveBoth(int motor_PC, int motor_PD);
