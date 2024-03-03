@@ -1,3 +1,7 @@
+/**********************************************************************
+MUX C FILE
+**********************************************************************/
+
 #include "mindsensors-ev3smux.h"
 /*
 * This is a wrapper for the mindsensors-ev3smux.h function calls and is based on
