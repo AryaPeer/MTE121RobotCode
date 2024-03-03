@@ -1,19 +1,9 @@
 #include "mindsensors-ev3smux.h"
 /*
-This is a wrapper for the mindsensors-ev3smux.h function calls and is based on
-mindsensors-ev3smux-test1.c written by Xander Soldaat
-*/
-/**
+* This is a wrapper for the mindsensors-ev3smux.h function calls and is based on
 * mindsensors-ev3smux-test1.c
-* Credits:
-* - Big thanks to Mindsensors for providing me with the hardware necessary to write and test this.
+* (xander_at_botbench.com)
 *
-* License: You may use this code as you wish, provided you give credit where its due.
-*
-* THIS CODE WILL ONLY WORK WITH ROBOTC VERSION 4.10 AND HIGHER
-
-* \author Xander Soldaat (xander_at_botbench.com)
-* \date 14 December 2014
 */
 
 // The SMUX can have up to 3 sensors attached to it.
